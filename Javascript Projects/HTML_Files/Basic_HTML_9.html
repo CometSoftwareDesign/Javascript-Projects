@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic_JavaScript_8</title>
+    <meta name="viewport" content="width=device_width, initial-scale =1">
+<script src="../JavaScript_Files/Basic_JavaScript_9.js"></script>
+<link rel="stylesheet" type="text/css" href= "../CSS_Files/Basic_CSS_1.css">
+</head>
+
+<body>
+    
+    
+<!--Countdown timer-->
+
+<p> How long do you want until the alarm goes off?</p>
+<input id= "seconds" value="" />
+<button onclick="countdown()">Click here for timer!</button>
+<p id = "Timer"></p>
+
+<div class= "slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="../Japan_1.png" alt="Japan 1" style="width: 75%;">
+        <div class="text">Archway to Heaven</div>
+    </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="../Japan_2.png" alt="Japan 2" style="width: 75%;">
+    <div class="text">Mount Fuji</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="../Japan_3.png" alt="Japan 3" style="width: 75%;">
+    <div class="text">Temple in winter</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="../Japan_4.png" alt="Japan 4" style="width: 75%;">
+    <div class="text">Japanese temple and waterfall</div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="../Japan_5.png" style="width: 75%;">
+    <div class="text"> Samurai</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)"> &#10094; </a> 
+<a class="next" onclick="plusSlides(1)"> &#10095; </a>
+</div>
+
+<br> 
+<br>
+<div style="text-align: center;">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+</body>
+</html>
