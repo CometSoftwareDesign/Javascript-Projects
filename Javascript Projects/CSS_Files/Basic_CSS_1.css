@@ -12,16 +12,17 @@ body{
 
 img {
   align-content: center;
-    width: 500px;
+    width: 600px;
     height: 350px;
+    padding-left: 150px;
  
 }
 
 /*Slideshow container*/
 
 .slideshow-container{
-    max-width: 1000px;
-    position: center;
+    max-width: 800px;
+    position: relative;
     margin: 100 100;
 }
 
