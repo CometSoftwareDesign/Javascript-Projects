@@ -1,0 +1,1 @@
+alert("They'll never take our freedom!")
