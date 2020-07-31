@@ -47,7 +47,69 @@ document.getElementById ("Array").innerHTML = "This is " + Egypt_Picture [2] + "
 //Constant function
 
 function constant_Function() {
-    const Scottish_Empire = {country:"Scotland", capital:"Edinburg"};
-    Scottish_Empire.capital = "Leith";
-    document.getElementById("Constant") .innerhtml = "The Capital of Scotland is " + Scottish_Empire.capital + ".";
+    const scottish_Empire = {country:"Scotland", capital:"Edinburg"};
+    scottish_Empire.capital = "Leith";
+    scottish_Empire.population = "20 Million."
+    document.getElementById("Constant").innerHTML = "The Capital of Scotland is " + scottish_Empire.capital + "." + "The total population is "+ scottish_Empire.population;
+}
+//end Const Function
+
+// Let Function
+D = 78;
+document.write ( "<br>"+ D );
+
+{let D = 66
+document.write ("<br>"+ D)
+}
+
+document.write ("<br>" + D);
+
+//end let function
+
+//Return Function
+
+
+function returnFunction() {
+    H = 7
+    return (H * H);
+}
+
+document.getElementById("Return") .innerHTML = returnFunction();
+
+//Let Function part 2
+let Vacation = {
+    Destination: "Greece",
+    Cost_of_Travel : "$26,000",
+    Number_of_People: 6,
+    Length_of_trip: "2 Weeks",
+    description : function() {
+     return "We are going to " + this.Destination + "." + " It will cost " + this.Cost_of_Travel + ". " + this.Number_of_People + " people will be going. " + "The trip will last " + this.Length_of_trip + ".";
+    }
+};
+ document.getElementById ("LetFunction").innerHTML = Vacation.description();
+
+//end let function part 2
+
+
+//Loop Break Function
+{var text = ""
+var i;
+for (i = 1; i < 600; i++) {
+    if (i === 15) { break; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("Break").innerHTML = text;
+}
+//end Loop Break function
+
+//Loop Continue function
+
+{
+var words = "";
+var p;
+for (p = 0; p < 20; p++) {
+    if (p === 9) { continue; }
+    words += "The number is " + p + "<br>";
+}
+document.getElementById("Continue").innerHTML = words;
 }
