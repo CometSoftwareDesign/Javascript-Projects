@@ -2,13 +2,13 @@
     width: 400px;
     height: 470px;
     margin: 100px auto;
-    background-color: forestgreen;
+ 
 }
 
 #frmMenu{
     width:800px;
     height:800px;
-    background-color:dodgerblue ;
+    background-color:crimson;
     margin-left: -200px;
 }
 
@@ -75,7 +75,7 @@ h1{
 
 h3{
     font-family: fantasy;
-    color: black;
+    color: gold;
     font-size: 30px;
 }
 

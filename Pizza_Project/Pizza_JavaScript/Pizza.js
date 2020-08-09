@@ -27,8 +27,10 @@ function getReceipt() {
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
     //these variables will get passed on to each function
+    //you can only call one function at a time
     getTopping(runningTotal,text1);
-    getVegetable(runningTotal,text1);
+
+
 };
 //get topping function
 function getTopping(runningTotal,text1) {
@@ -55,6 +57,8 @@ function getTopping(runningTotal,text1) {
     console.log("Purchase Total: "+"$"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+    //you can only call one function at a time
+    getVegetable(runningTotal,text1);
 };
 //get vegetable function
 function getVegetable(runningTotal, text1) {
