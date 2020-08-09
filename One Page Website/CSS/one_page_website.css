@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+.row > .column{
+    padding: 0 8px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    float: left;
+    width: 25%;
+}
+
+/*the modal(background) the modal is the background*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top:100px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: aquamarine;
+}
+
+.modal-content{
+    position: relative;
+    background-color: cadetblue;
+    margin: auto;
+    padding: 0;
+    width:90%;
+    max-width: 1200px;
+}
+/*the close button:*/
+
+.close{
+    color: gold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.close:hover,.close:focus{
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides{
+    display: none;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+
+/* next and previous buttons*/
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next{
+    right: 0 ;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.prev:hover,
+.next:hover{
+    background-color: lightgreen;
+}
+/*number text*/
+.numbertext{
+    color: lightsalmon;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img{
+    margin-bottom:-4px ;
+
+}
+
+.caption-container{
+    text-align: center;
+    background-color: lightseagreen;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.demo{
+    opacity: 0.6;
+}
+
+.active,.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow{
+    transition: 0.3s;
+}
+
+.hover-shadow:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0,0.19)
+}
+
+}
+#form{
+    width: 20%;
+    margin-top: 5px;
+    margin-right:5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border:5px;
+    border-radius: 5%;
+    border-style: double;
+    border-color: darkgreen;
+}
+

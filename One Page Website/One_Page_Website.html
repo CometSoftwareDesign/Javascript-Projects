@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<meta charset= "utf-8">
+
+<title>Travel The World</title> 
+
+
+<body>
+	<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css"> 
+<!-- HOME PAGE -->
+<h1> Welcome to Travel The World.com!</h1>
+<div id = "home" >
+<h1> Home Page</h1>
+<p> Here you will be able to navigate through our various pages.</p><p> Click the link to go where you want.</p>
+			       <div>
+				        <ul>
+						   <a href="#home"  id =link<li> Home Page </li></a><br>
+						   <a href="#gallery"  id =link<li> Destinations</li></a><br>
+						   <a href="#contact" id =link<li> Book Your Trip</li></a><br>
+						</ul>
+                   </div>
+</div>
+<!-- End Home Page-->
+
+<!-- Destinations-->
+<div id = "gallery">
+
+<h1>Places to Go</h1>
+<ul>
+	<li>
+   		 <details> 
+		    <summary>Bermuda</summary> 
+       		<p> Bermuda is very nice in the summer. It has crystal blue ocean water that is wonderful to swim in. This fishing here is world renowned.</p> 
+            <div class = "row1">
+				<div class= "column1">
+	   				 <img src= "./Img/b1.png" style= "width: 100%;" onclick="openModal1();currentSlide1(1)" class= "hover-shadow cursor"alt ="Overhead View of Bermuda">
+				</div>	
+			
+				<div class="column1">
+					<img src= "./Img/b2.png" style= "width: 100%;" onclick="openModal1();currentSlide1(2)" class= "hover-shadow cursor"alt="Map of Bermuda">
+				</div>
+			
+				<div class="column1">
+					<img src= "./Img/b3.png"style= "width: 100%;" onclick="openModal1();currentSlide1(3)" class= "hover-shadow cursor" alt="The Bermuda Triangle">
+				</div>
+				<br>
+				<div>
+					<a href = "https://www.youtube.com/watch?v=23pcN--XdJk">Click Here for more information!</a>
+				</div>
+			
+			</div>
+			
+			<div id="myModal1" class="modal1">
+				<span class="close1 cursor" onclick="closeModal1()"> &times;</span>
+				<div class="modal-content1">
+					
+					<div class="mySlides1">
+						<div class="numbertext1">1/3</div>
+						<img src="./Img/b1.png" style="width:100%">
+					</div>
+					<div class="mySlides1">
+						<div class="numbertext1">2/3</div>
+						<img src="./Img/b2.png" style="width:100%">
+					</div>
+					<div class="mySlides1">
+						<div class="numbertext1">3/3</div>
+						<img src="./Img/b3.png" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+					<div class="caption-container1">
+						<p id="caption1"></p>
+					</div>
+				</div>
+			
+
+				<div class="column1">
+					<img class="demo cursor" src="./Img/b1.png" style="width: 100%;" onclick="currentSlide1(1)" 
+					alt="Bermuda Beach">
+				</div>
+			
+				<div class="column1">
+					<img class="demo cursor" src="./Img/b2.png" style="width: 100%;" onclick="currentSlide1(2)"
+					alt=" Bermudan Inlet">
+				</div>
+			
+				<div class="column1">
+					<img class="demo1 cursor" src="./Img/b3.png" style="width: 100%;" onclick="currentSlide1(3)"
+					alt="Bermuda Triangle">
+				</div>
+			</div>	
+
+		</details>
+  </li> <br>
+		  
+	 
+	<li>
+     	<details>
+                 <summary>Florida</summary>
+                 <p> Florida is renowned for its deep sea fishing! It has one of the highest tourist popluation in the U.S. due to the large amount of theme parks located in the state.</p>
+		 	<div class="row2">
+				 <div class= "column2">
+	    			<img src="./Img/fl1.png" style= "width: 100%;" onclick="openModa2();currentSlide2(1)" class= "hover-shadow cursor" alt="Florida coast">
+				</div>
+
+				<div class="column2">
+					<img src="./Img/fl2.png" style= "width: 100%;" onclick="openModa2();currentSlide2(2)" class= "hover-shadow cursor" alt="Welcome to Florida">
+				</div>
+
+				<div class="column2">
+					<img src="./Img/fl3.png" style= "width: 100%;" onclick="openModal2();currentSlide2(3)" class= "hover-shadow cursor" alt="Coastal High Rises">
+				</div>
+				<br>
+				<div>
+					<a href="https://www.youtube.com/watch?v=qzGZewdEAH4"> Click Here for more information! </a>
+            	</div>			
+			
+			</div>
+
+			<div id="myModal2" class="modal2">
+				<span class="close cursor" onclick="closeModal2()"> &times;</span>
+				<div class="modal-content">
+			
+					<div class="mySlides2">
+						<div class="numbertext2">1/3</div>
+						<img src="./Img/fl1.png" style="width:100%">
+					</div>
+
+					<div class="mySlides2">
+						<div class="numbertext2">2/3</div>
+						<img src="./Img/fl2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides2">
+						<div class="numbertext2">3/3</div>
+						<img src="./Img/fl3.png" style="width:100%">
+					</div>
+			
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+				</div>
+			</div>	
+
+						<div class="column2">
+							<img class="demo cursor" src="./Img/fl1.png" style="width: 100%;" onclick="currentSlide2(1)"
+								alt="Florida Coast">
+						</div>
+						
+						<div class="column2">
+							<img class="demo cursor" src="./Img/fl2.png" style="width: 100%;" onclick="currentSlide2(2)"
+								alt="Welcome to Florida">
+						</div>
+						
+						<div class="column2">
+							<img class="demo cursor" src="./Img/fl3.png" style="width: 100%;" onclick="currentSlide(3)"
+								alt="Coastal High Rises">
+						</div>
+		 
+		</details> 
+	</li><br>
+	  
+	  
+    <li>
+        <details>
+                  <summary> Alaska </summary>
+                  <p> Alaska has a cool climate durning the summer. Many commercial fisherman do their main amount of buisness in Alaska during the summer salmon runs accross the Pacific Ocean. </p>
+         <div class="row3">
+			 	<div class="column3">
+	    			<img src= "./Img/al1.png" style= "width: 100%;" onclick="openModal3();currentSlide3(1)" class= "hover-shadow cursor"alt="Alaskan Mountains">
+			 	</div>
+			
+			 	<div class="column3">
+					<img src= "./Img/al2.png" style= "width: 100%;" onclick="openModal3();currentSlide3(2)" class= "hover-shadow cursor" alt="Juneau Alaska">
+			 	</div>
+
+				<div class= "column3">
+				 	<img src= "./Img/al3.png"  style= "width: 100%;" onclick="openModal3();currentSlide3(3)" class= "hover-shadow cursor"alt="Alaskan Winding Road">
+			 	</div>
+				 <br>
+				<div>
+		  			<a href="https://www.youtube.com/watch?v=uaUUE7WyOQg"> Click Here for more information! </a>
+          		</div>
+			
+			</div>
+		 
+			<div id="myModal3" class="modal3">
+				<span class="close cursor" onclick="closeModal3()"> &times;</span>
+				<div class="modal-content">
+			
+					<div class="mySlides3">
+						<div class="numbertext3">1/3</div>
+						<img src="./Img/al1.png" style="width:100%">
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext3">2/3</div>
+						<img src="./Img/al2.png" style="width:100%">
+					</div>
+					<div class="mySlides3">
+						<div class="numbertext3">3/3</div>
+						<img src="./Img/al3.png" style="width:100%">
+					</div>
+			
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+					<div class="caption-container">
+						<p id="caption"></p>
+
+
+					<div class="column">
+						<img class="demo cursor" src="./Img/al1.png" style="width: 100%;" onclick="currentSlide(1)" 
+						alt="Alaskan Lake">
+					</div>	
+					
+					<div class="column">
+						<img class="demo cursor" src="./Img/al2.png" style="width: 100%;" onclick="currentSlide(2)"
+							alt="Juneau Alaska">
+					</div>
+
+					<div class="column">
+						<img class="demo cursor" src="./Img/al3.png" style="width: 100%;" onclick="currentSlide(3)"
+							alt="Alaskan Winding Road">
+					</div>
+		
+				</details>
+    </li><br>
+    
+</ul>
+</article>
+<script src="./JS/one_page_website.js"></script>
+</body>
+
+<!--End Destinations;-->
+
+
+<!--End of Page-->
+<div id= "contact">
+	<h1> Book Your Trip Here!</h1>
+	<form id="form" action= "" method "post">First Name <input type= "text" id= "First Name" name= "First Name"><br>
+		<br>Last Name<input type= "text" id = "Last Name" last name = "Last Name"><br>
+		<br>Destination: <input type= "text" Destination = "Destination"> <br>
+		<input type= "submit" value = "Enter">
+	</form>
+</div>
+
+<footer>
+<p>&copy 2020 Property of &quotThe Global Travel Network&quot. All Rights Reserved.</p>
+<p> If you have any questions or you'd like to book a trip. Please call 855-489-1224.</p>
+
+<!--End Date-->
+</footer>
+</html>
