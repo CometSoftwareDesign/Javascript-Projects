@@ -8,23 +8,60 @@ body{
     box-sizing: border-box;
 
 }
-.row > .column{
+
+/*rows*/
+.row1 > .column1{
     padding: 0 8px;
 }
 
-.row:after{
+.row1:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*row 2 Florida*/
+.row2 > .column2{
+    padding: 0 8px;
+}
+
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row3 > .column3{
+    padding: 0 8px;
+}
+
+.row3:after{
     content: "";
     display: table;
     clear: both;
 }
 
-.column{
+/*end rows*/
+/*columns*/
+.column1{
     float: left;
     width: 25%;
 }
 
+/*column 2 Florida*/
+.column2{
+    float: left;
+    width: 25%;
+}
+
+.column3{
+    float: left;
+    width: 25%;
+}
+
+/*end columns*/
+
 /*the modal(background) the modal is the background*/
-.modal{
+/*modal one (bermuda)*/
+.modal1{
     display: none;
     position: fixed;
     z-index: 1;
@@ -37,7 +74,53 @@ body{
     background-color: aquamarine;
 }
 
-.modal-content{
+.modal-content1{
+    position: relative;
+    background-color: cadetblue;
+    margin: auto;
+    padding: 0;
+    width:90%;
+    max-width: 1200px;
+}
+
+/*Modal 2 Florida*/
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+/*modal 3 Alaska*/
+.modal3{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top:100px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: snow;
+}
+
+.modal-content3{
     position: relative;
     background-color: cadetblue;
     margin: auto;
@@ -47,7 +130,7 @@ body{
 }
 /*the close button:*/
 
-.close{
+.close1{
     color: gold;
     position: absolute;
     top: 10px;
@@ -56,23 +139,75 @@ body{
     font-size: 35px;
 }
 
-.close:hover,.close:focus{
+.close1:hover,.close1:focus{
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*close 2 Florida*/
+.close2{
+    color: gold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.close2:hover,.close2:focus{
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*close 3*/
+.close3{
+    color: gold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.close3:hover,.close3:focus{
     color: green;
     text-decoration: none;
     cursor: pointer;
 }
 
-.mySlides{
+/*end close buttons*/
+/*my slides 1*/
+.mySlides1{
+    display: none;
+}
+/*my slides 2*/
+.mySlides2{
+    display: none;
+}
+/*my slides 3*/
+.mySlides3{
     display: none;
 }
 
-.cursor{
+/*end my slides*/
+
+
+/*cursor*/
+/*cursor 1*/
+.cursor1{
+    cursor: pointer;
+}
+/*cursor 2*/
+.cursor2{
+    cursor: pointer;
+}
+/*cursor 3*/
+.cursor3{
     cursor: pointer;
 }
 
-
 /* next and previous buttons*/
-.prev,.next{
+.prev1,.next1{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -88,18 +223,97 @@ body{
     -webkit-user-select: none;
 }
 
-.next{
+.next1{
     right: 0 ;
     border-radius: 0 3px 3px 0;
 
 }
 
-.prev:hover,
-.next:hover{
+.prev1:hover,
+.next1:hover{
     background-color: lightgreen;
 }
+
+
+/* next and prev 2 Florida*/
+.prev2,.next2{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next2{
+    right: 0 ;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.prev2:hover,
+.next2:hover{
+    background-color: lightgreen;
+}
+
+/*next and prev 3*/
+.prev3,.next3{
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: l;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next3{
+    right: 0 ;
+    border-radius: 0 3px 3px 0;
+   
+}
+
+.prev3:hover,
+.next3:hover{
+    background-color: lightgreen;
+}
+
+/*end next and prev*/
+
+
+
 /*number text*/
-.numbertext{
+/*number text 1*/
+.numbertext1{
+    color: lightsalmon;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*number text 2*/
+.numbertext2{
+    color: lightsalmon;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*number text 3*/
+.numbertext3{
     color: lightsalmon;
     font-size: 12px;
     padding: 8px 12px;
@@ -111,8 +325,25 @@ img{
     margin-bottom:-4px ;
 
 }
-
-.caption-container{
+/*caption container*/
+/*caption container 1*/
+.caption-container1{
+    text-align: center;
+    background-color: lightseagreen;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*caption container*/
+.caption-container2{
+    text-align: center;
+    background-color: lightseagreen;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/*caption container*/
+.caption-container3{
     text-align: center;
     background-color: lightseagreen;
     padding: 8px 12px;
@@ -120,10 +351,20 @@ img{
     top: 0;
 }
 
-.demo{
+/*demo*/
+/*demo 1*/
+.demo1{
     opacity: 0.6;
 }
-
+/*demo 2*/
+.demo2{
+    opacity: 0.6;
+}
+/*demo 3*/
+.demo3{
+    opacity: 0.6;
+}
+/*Bermuda*/
 .active,.demo:hover {
     opacity: 1;
 }
@@ -132,11 +373,35 @@ img.hover-shadow{
     transition: 0.3s;
 }
 
-.hover-shadow:hover{
+.hover-shadow1:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0,0.19)
+}
+/*Florida*/
+.active,.demo2:hover {
+    opacity: 1;
+}
+
+img.hover-shadow2{
+    transition: 0.3s;
+}
+
+.hover-shadow2:hover{
 box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0,0.19)
 }
 
+/*Alaska*/
+.active,.demo3:hover {
+    opacity: 1;
 }
+
+img.hover-shadow3{
+    transition: 0.3s;
+}
+
+.hover-shadow3:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0 , 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0,0.19)
+}
+
 #form{
     width: 20%;
     margin-top: 5px;
